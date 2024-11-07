@@ -1,0 +1,260 @@
+/* IMPORTACIÓN DE FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* RESETEO GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ESTILOS PARA EL BODY */
+body {
+  font-family: 'Poppins', sans-serif; /* Cambiado a 'Poppins' */
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ESTILOS PARA EL HEADER Y LOGO */
+h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-2 {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-2:hover {
+  transform: scale(1.05);
+}
+
+/* SECCIÓN DE HISTORIA */
+.text-justify {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+}
+
+/* GALERÍA DE IMÁGENES */
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* SECCIÓN DE OFERTAS DE EMPLEO */
+.ofertas-empleo {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.ofertas-empleo h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.ofertas-empleo h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #3498db;
+}
+
+.list-group-item {
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 8px !important;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.navbar {
+  display: flex;
+}
+.product-txt {
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .product-txt h4 {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+  
+  .product-txt p {
+    color: #A7A7A7;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+  
+  .product-txt span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+  }
+/* ESTILOS PARA LA SECCIÓN DE REDES SOCIALES */
+.socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #dbd81b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.social:hover {
+  background-color: yellow;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ESTILOS PARA EL FOOTER */
+.footer {
+  background-color: #021324; /* Agregado para mejorar el contraste */
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link h4 {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.link ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.link ul li a:hover {
+  color: #3498db; /* Cambiado a azul para mantener consistencia */
+}
+.galeria-acordeon {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  gap: 4px;
+}
+
+.galeria-acordeon img {
+  width: 100px; /* Aumenta el ancho inicial para evitar que se vean demasiado pequeñas */
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+
+.galeria-acordeon img:hover {
+  cursor: pointer; /* Cambia el cursor a pointer para indicar interactividad */
+  width: 200px; /* Reduce el ancho en hover para que no se amplíe tanto */
+  opacity: 1;
+  filter: contrast(120%) brightness(105%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* MEDIA QUERIES Y AJUSTES RESPONSIVOS */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-justify {
+    font-size: 1rem;
+  }
+
+  .ofertas-empleo {
+    padding: 1.5rem;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo-2 {
+    width: 120px;
+  }
+
+  .ofertas-empleo h2 {
+    font-size: 1.5rem;
+  }
+}

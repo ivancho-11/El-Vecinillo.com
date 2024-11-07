@@ -1,0 +1,564 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El vecinillo</title>
+    <link rel="icon" href="images/el vecinillo.png" type="imagenes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+  <!-- Inicio del proyecto página  label * 2    cambio de las modulos mobibles  cambio de imagenes -->
+    <header>
+        <div class="menu container">
+            
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="Ícono del menu">
+            </label>
+
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#" onmouseover="mostrarInfo('infoInicio')" onmouseout="ocultarInfo('infoInicio')">Inicio</a></li>
+                        <li><a href="#" onmouseover="mostrarInfo('infoServicios')" onmouseout="ocultarInfo('infoServicios')">Servicios</a></li>
+                        <li><a href="#" onmouseover="mostrarInfo('infoProductos')" onmouseout="ocultarInfo('infoProductos')">Productos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Información desplegable -->
+                <div id="infoInicio" class="info" style="display:none;">
+                    <p>Bienvenido a nuestro sitio web. Aquí encontrarás toda la información relevante acerca de nuestros servicios <li><a href="Testimonios.php">Testimonios</a></li>.</p>
+                </div>
+                
+                <div id="infoServicios" class="info" style="display:none;">
+                    <p>Ofrecemos una amplia gama de servicios diseñados para satisfacer tus necesidades</p>
+                </div>
+                
+                <div id="infoProductos" class="info" style="display:none;">
+                    <p>Explora nuestra selección de productos de alta calidad</p>
+                </div>
+                
+                
+                
+
+                <img class="logo-2" src="images/el vecinillo.png" alt="Logo alternativo">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+
+                    <div class="socials">
+                        <a href="https://www.facebook.com/profile.php?id=61568273930955&is_tour_completed" target="_blank">
+                          <div class="social">
+                            <img src="images/s1.svg" alt="Facebook">
+                          </div>
+                        </a>
+                      </div>
+                      
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/x.png" alt="Red Social 2">
+                        </div>
+                        </a>
+                        <div class="social">
+                        <a href="#">
+                            <img src="images/s3.svg" alt="Red Social 3">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Hamburguesa</h1>
+                                <p>
+                                    ¡Estas hamburguesas están pa' morirse de ricas! Carne jugosa, con queso, vegetales 
+                                    frescos y todas las salsas 
+                                    que te puedas imaginar. ¡Te va a dejar con ganas de más!
+                                </p>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                                <div class="botones">
+                             <a href="https://api.whatsapp.com/send?phone=573144231163&text=Hola,%20quiero%20comprar%20este%20producto" class="btn-1">Compra aqui WhatsApp</a>
+                             <a href="#" class="btn-1">Menu</a>
+                               </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/Hamburguesa vista frontal con papas fritas | Foto Premium.jpg" alt="Hamburguesa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Perros</h1>
+                                <p>
+                                    Perros calientes "¡El perro caliente que te va a enamorar! Cargado de sabor y con todas las salsas que quieras. ¡Pa' los que saben disfrutar!"
+                                </p>
+                                <div class="botones">
+                                    <a href="https://api.whatsapp.com/send?phone=573144231163&text=Hola,%20quiero%20comprar%20este%20producto" class="btn-1">Compra aqui WhatsApp</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                      </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/perro caliente .jpg" alt="Perros calientes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Arepas</h1>
+                                <p>
+                                    Arepas de queso"¡Esta arepa de queso está pa’ chuparse los dedos! Suave y derretidita por dentro, con el quesito que se te sale al primer mordisco."
+                                </p>
+                                <div class="botones">
+                                    <a href="https://api.whatsapp.com/send?phone=573144231163&text=Hola,%20quiero%20comprar%20este%20producto" class="btn-1">Compra aqui WhatsApp</a>
+                                     <a href="#" class="btn-1">Menu</a>
+                                      </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/arepas.jpg" alt="Arepas">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Salchipapa</h1>
+                                <p>
+                                    Salchipapa con pollo y carne, queso, huevo de codorniz "¿Te provoca algo de lujo? ¡Salchipapas con pollo, carne, queso y su huevo de codorniz! Una bomba de sabor que no te querrás perder."
+                                </p>
+                                <div class="botones">
+                                    <a href="https://api.whatsapp.com/send?phone=573144231163&text=Hola,%20quiero%20comprar%20este%20producto" class="btn-1">Compra aqui WhatsApp</a>
+                                    <a href="images/ivan" class="btn-1">Menu</a>
+                                      </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/Salchipapa típica de América Latina_ Salchichas con papas fritas, salsa de tomate, mostaza y mayonesa en sartén de hierro y fondo negro Vista superior Espacio de copia | Foto Premium.jpg" alt="Salchipapa">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="products">
+        <div class="tabs container">
+
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabinput" value="1">
+            <label for="tab1">Hamburguesa</label>
+            <div class="tab">
+
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Te provoca</h4>
+                                    <img src="images/food4.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Se te antoja </h4>
+                                    <img src="images/food5.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Salchipapa</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Pide lo que quieras</h4>
+                                    <img src="images/food6.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Que tal esto</h4>
+                                    <img src="images/food4.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Te provoca</h4>
+                                    <img src="images/food7.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+  <!-- Inicio del proyecto página  label * 2    cambio de las modulos mobibles  cambio de imagenes -->
+
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabinput" value="2">
+            <label for="tab2">Tus comidas rapidas al instante</label>
+            <div class="tab">
+
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Te provoca</h4>
+                                    <img src="images/food7.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Se te antoja </h4>
+                                    <img src="images/food8.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Salchipapa</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Pide lo que quieras</h4>
+                                    <img src="images/food9.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Que tal esto</h4>
+                                    <img src="images/food4.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Te provoca</h4>
+                                    <img src="images/food2.png" alt="Hamburguesa Especial">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Hamburguesa Especial</h4>
+                                    <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                                    <span class="price">$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+  <!-- Inicio del proyecto página  label * 3    cambio de las modulos mobibles  cambio de imagenes -->
+
+  <input type="radio" name="tabs" id="tab3" checked="checked" class="tabinput" value="3">
+  <label for="tab3">Date gusto</label>
+  <div class="tab">
+
+      <div class="swiper mySwiper-3" id="swiper3">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="product">
+                      <div class="product-img">
+                          <h4>Te provoca</h4>
+                          <img src="images2/FLAUTA.PNG" alt="Hamburguesa Especial">
+                      </div>
+                      <div class="product-txt">
+                          <h4>Flautas </h4>
+                          <p>¿Se te antojaron unas empanadas o flautas rellenas? ¡Aquí están listas, solo pa' que las disfrutes!"</p>
+                          <span class="price">Desde 3,000 </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="product">
+                      <div class="product-img">
+                          <h4>Se te antoja </h4>
+                          <img src="images2/AREPS RELLENAS.PNG" alt="Hamburguesa Especial">
+                      </div>
+                      <div class="product-txt">
+                          <h4>AREPAS RELLENAS </h4>
+                          <p>"Con hambre no se juega. ¡Pedí ya tus empanadas, arepas y salchipapas, y llenate de buena comida!"</p>
+                          <span class="price">Desde $10,000</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="product">
+                      <div class="product-img">
+                          <h4>Pide lo que quieras</h4>
+                          <img src="images2/PAPAS2.PNG" alt="Hamburguesa Especial">
+                      </div>
+                      <div class="product-txt">
+                          <h4>Hamburguesa Especial</h4>
+                          <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                          <span class="price">$8,000</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="product">
+                      <div class="product-img">
+                          <h4>Que tal esto</h4>
+                          <img src="images/food4.png" alt="Hamburguesa Especial">
+                      </div>
+                      <div class="product-txt">
+                          <h4>Hamburguesa Especial</h4>
+                          <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                          <span class="price">$8,000</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="product">
+                      <div class="product-img">
+                          <h4>Te provoca</h4>
+                          <img src="images/food5.png" alt="Hamburguesa Especial">
+                      </div>
+                      <div class="product-txt">
+                          <h4>Hamburguesa Especial</h4>
+                          <p>La mejor hamburguesa con todos los ingredientes que amas.</p>
+                          <span class="price">$8,000</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </div>
+ </div>
+    </main>
+
+    <section class="swiper mySwiper-2" id="swiper2">
+        <div class="info-img">
+          <img src="images/info.jpg" alt="esto es una arepa rellena de queso y carne ">
+        </div>
+        <div class="info-txt">
+          <h1>Tus gustos en un solo lugar</h1>
+          <p>
+            ¿Antojado de algo más? Prueba nuestras hamburguesas, preparadas con los mejores ingredientes. ¡Acompañadas de nuestras gaseosas 
+            Postobón o Coca-Cola, serán el combo perfecto! 🍔
+          </p>
+          <a href="#" class="btn-2">Más información</a>
+        </div>
+      </section>
+      <section class="galeria-acordeon">
+        <img src="images/food1.png" alt="Comida 1">
+        <img src="images/food8.png" alt="Comida 2">
+        <img src="images/salchipapas.jpg" alt="Comida 3">
+        <img src="images/perro caliente .jpg" alt="Comida 4">
+        <img src="images/arepas.jpg" alt="Comida 5">
+    </section>
+
+ <section class="Horario">
+    <div class="horario-info-container">
+        <h2>Horario</h2>
+        <div class="horario-txt">
+            <div class="txt">
+                <h4>Dirección</h4>
+                <p>Carrera 105 No 129-28</p>
+                <p>Aures II</p>
+            </div>
+            <div class="txt">
+                <h4>Horario</h4>
+                <p>Martes, Miércoles, Jueves, Viernes, Sábado, Domingo</p>
+                <p>Desde las 5:00 pm hasta 11:00 pm</p>
+            </div>
+            <div class="txt">
+                <h4>Teléfono</h4>
+                <a href="#" id="whatsapp-enlace">
+                    <img src="images/ivan.PNG" alt="WhatsApp" style="width: 24px; height: 24px; vertical-align: middle;">
+                    "¿No querés salir? No te preocupés, 
+                    ¡te llevamos el saborcito directo a 
+                    tu puerta!" 📱🍴"
+                </a>
+            
+                <script>
+                    document.getElementById('whatsapp-enlace').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        mostrarMenu(event);  // Llama a la función para mostrar el menú
+                    });
+                </script>
+                  <a href="https://api.whatsapp.com/send?phone=573144231163&text=Hola,%20quiero%20comprar%20este%20producto" class="btn-1">Compra aqui WhatsApp</a>
+            
+                <p>3102993458</p>
+            </div>
+            <div class="txt">
+                <h4>Redes sociales</h4>
+                <div class="socials">
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s1.svg" alt="Red Social 1">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/x.png" alt="Red Social 2">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s3.svg" alt="Red Social 3">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INFORMAICION DE HORARIOS  -->
+
+ 
+
+ <section>
+    <iframe  class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.222279112637!2d-74.1023953!3d4.7314114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84949765e205%3A0xd4d22e78d67d7ced!2sCra.%20105%20%23129c-11%20c%2028%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1726355244200!5m2!1ses-419!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ </section>
+ 
+ <footer class="footer container">
+    <img class="logo-2" src= "images/el vecinillo.png" alt="">
+    
+    <div class="link">
+        <h4> GLOSARIO </h4>
+        <ul>
+            <li><a href="#" onclick="openMenu()">Menú</a></li>
+
+<!-- Ventana emergente para mostrar el PDF -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeMenu()">Cerrar</button>
+        <iframe src="MENU.PDF" title="Menú PDF"></iframe>
+    </div>
+</div>
+
+            <li><a href="https://wa.me/573142584256" target="_blank">Domicilios</a></li>
+
+            <li><a href="https://wa.me/573142584256text=¡Hola!%20Estoy%20interesado%20en%20las%20promociones." target="_blank">Promociones</a></li>
+
+        </ul>
+    </div>
+
+    <div class="link">
+        <h4> PIDE LO QUE QUIERAS</h4>
+        <ul>
+            <li><a href="https://wa.me/573142584256" target="_blank"> Contacto</a></li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="#"> Ubicación</a></li>
+        </ul>
+    </div>
+
+    <div class="link">
+        <h4>INFORMACION</h4>
+        <ul>
+            <li><a href="Testimonios.php">Testimonios</a></li>
+            <li><a href="#">Salsas</a></li>
+            <li><a href="panel_admin.php">ADMINISTRACION</a></li>
+        </ul>
+    </div>
+    <div class="link"></div>
+        <h4> Redes sociales  </h4>
+        <div class="txt"></div>
+        
+        <div class="socials">
+            <a href="#">
+                <div class="social">
+                <img src="images/s1.svg" alt="Red Social 1">
+            </div>
+            </a>
+            <a href="#">
+                <div class="social">
+                    <img src="images/x.png" alt="Red Social 2">
+            </div>
+            </a>
+            <div class="social">
+            <a href="#">
+                <img src="images/s3.svg" alt="Red Social 3">
+            </div>
+    </div>
+
+
+ </footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="menu-carrito.js"></script> 
+
+
+    <script src="java.js"></script>
+
+ 
+</body>
+
+</html>
